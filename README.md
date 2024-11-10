@@ -12,7 +12,7 @@ is a function which ONLY accepts integer values from the user. As we shall see, 
 
 
 
-    => next function
+=> next function
 
 
 
@@ -22,7 +22,7 @@ Similarly to get_int, it only receive float values. Therefore, it accepts intege
 
 
 
-    => next function
+=> next function
 
 
 
@@ -37,7 +37,7 @@ Hence, if the use types 'n' or 's', the function will accepts those values nonet
 
 
 
-    => next function
+=> next function
 
 
 

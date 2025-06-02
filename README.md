@@ -58,3 +58,20 @@ Differently of 'get_these', 'get' only accepts the exact same configuration of u
 
 Feel totally free to use these functions wherever you want.
 Nowadays the repository is been managed by 'mondfucchs'.
+
+=> next function
+get_this(_type: type, prompt: str, args: tuple[Any] = None, kwargs: dict[str, Any] = None)
+
+The most complex of all the functions. Takes a custom class `_type`. It takes inputs from the user, attempts to construct `_type` with the first argument being user input, the other arguments being `args` and `kwargs`. If the constructor throws an error, ask the user for another input; otherwise, return the value obtained from the constructor.
+```python
+class Value:
+    def __init__(self, val1, val2):
+        self.value = val1 + val2
+
+import functions
+v = functions.get_this(Value, "Enter a prefix: ", args=('-test',))
+```
+```python
+import functions
+v = functions.get_this(complex, 'Enter a complex value: ')
+```
